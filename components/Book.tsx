@@ -205,7 +205,7 @@ export default function Book() {
         ></Image>
 
         <Image
-          src="/ref/girl2.jpg"
+          src="/ref/girl2.JPG"
           alt="Front Cover"
           fill
           priority
