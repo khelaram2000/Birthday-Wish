@@ -24,7 +24,7 @@ const handwriting = Caveat({
 // ];
 
 const images = [
-  "/ref/girl2.jpg",
+  "/ref/girl2.JPG",
   "/ref/girl3.jpg",
   "/ref/girl4.jpg",
   "/ref/girl5.jpg",
