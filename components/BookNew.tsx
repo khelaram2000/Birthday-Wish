@@ -251,7 +251,7 @@ export default function Book() {
         {/* frame10: scale-65 (0.65) -> photoWidth/Height compensated: 132 / 0.65 ≈ 203 */}
         <PhotoInFrame
           frameSrc="/elements/frame10.png"
-          photoSrc="/ref/girl2.jpg"
+          photoSrc="/ref/girl2.JPG"
           frameClassName="scale-65 rotate-10 translate-x-14 -translate-y-20"
           photoOffsetX={0}
           photoOffsetY={0}
