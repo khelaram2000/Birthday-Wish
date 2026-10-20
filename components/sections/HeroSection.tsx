@@ -10,7 +10,7 @@ const path =
 const imgs = [
   { src: "/ref/heart.jpg" },
   { src: "/ref/girl.jpg" },
-  { src: "/ref/girl2.jpg" },
+  { src: "/ref/girl2.JPG" },
   { src: "/ref/girl3.jpg" },
   { src: "/ref/girl4.jpg" },
   { src: "/ref/girl5.jpg" },
