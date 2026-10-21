@@ -79,7 +79,7 @@ export interface ShowtimeCountdownProps {
    * curtain-open early, so you can check the reveal without waiting for
    * the real countdown. Defaults to true — set to false for production.
    */
-  showPreviewButton?: boolean;
+  showPreviewButton?: boolean = false;
 }
 
 interface Remaining {
