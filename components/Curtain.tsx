@@ -127,7 +127,7 @@ export default function ShowtimeCountdown({
   songVolume = 0.6,
   redirectTo,
   children,
-  showPreviewButton = true,
+  showPreviewButton = false,
 }: ShowtimeCountdownProps) {
   const router = useRouter();
 
