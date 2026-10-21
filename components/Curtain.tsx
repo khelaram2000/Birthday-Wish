@@ -407,7 +407,7 @@ export default function ShowtimeCountdown({
         <div className="spotlight" />
         <div className="grain" />
       </div>
-
+      /*
       {showPreviewButton && (
         <button
           type="button"
@@ -417,7 +417,7 @@ export default function ShowtimeCountdown({
           Preview
         </button>
       )}
-
+      */
       <div className="lock">
         <div className="curtain-l" ref={curtainLRef} />
         <div className="curtain-r" ref={curtainRRef} />
