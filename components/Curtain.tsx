@@ -75,11 +75,11 @@ export interface ShowtimeCountdownProps {
   /** Your actual page content. Not mounted until the countdown hits zero. Ignored when `redirectTo` is set. */
   children?: ReactNode;
   /**
-   * Shows a small "Preview" button on the lock screen that triggers the
+   * Shows a small "" button on the lock screen that triggers the
    * curtain-open early, so you can check the reveal without waiting for
    * the real countdown. Defaults to true — set to false for production.
    */
-  showPreviewButton?: boolean = false;
+  showButton?: boolean = false;
 }
 
 interface Remaining {
@@ -127,7 +127,7 @@ export default function ShowtimeCountdown({
   songVolume = 0.6,
   redirectTo,
   children,
-  showPreviewButton = false,
+  showButton = false,
 }: ShowtimeCountdownProps) {
   const router = useRouter();
 
@@ -407,8 +407,8 @@ export default function ShowtimeCountdown({
         <div className="spotlight" />
         <div className="grain" />
       </div>
-      /*
-      {showPreviewButton && (
+      
+      /*{showPreviewButton && (
         <button
           type="button"
           className="preview-btn"
@@ -416,8 +416,8 @@ export default function ShowtimeCountdown({
         >
           Preview
         </button>
-      )}
-      */
+      )}*/
+      
       <div className="lock">
         <div className="curtain-l" ref={curtainLRef} />
         <div className="curtain-r" ref={curtainRRef} />
