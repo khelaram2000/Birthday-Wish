@@ -127,7 +127,7 @@ export default function ShowtimeCountdown({
   songVolume = 0.6,
   redirectTo,
   children,
-  showPreviewButton = false,
+  show✨Button = false,
 }: ShowtimeCountdownProps) {
   const router = useRouter();
 
@@ -408,13 +408,13 @@ export default function ShowtimeCountdown({
         <div className="grain" />
       </div>
       
-      {showPreviewButton && (
+      {show✨Button && (
         <button
           type="button"
           className="✨-btn"
           onClick={triggerUnlock}
         >
-          Preview
+          ✨
         </button>
       )}
       
@@ -585,7 +585,7 @@ export default function ShowtimeCountdown({
           background-size: 160px 160px;
         }
 
-        .showtime-root .preview-btn {
+        .showtime-root .✨-btn {
           position: absolute;
           top: max(14px, env(safe-area-inset-top));
           right: max(14px, env(safe-area-inset-right));
@@ -603,7 +603,7 @@ export default function ShowtimeCountdown({
           backdrop-filter: blur(2px);
           transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
         }
-        .showtime-root .preview-btn:hover {
+        .showtime-root .✨-btn:hover {
           background: rgba(212, 175, 106, 0.16);
           border-color: var(--gold);
           color: var(--cream);
@@ -948,7 +948,7 @@ export default function ShowtimeCountdown({
           .showtime-root .lock-foot {
             margin-bottom: auto;
           }
-          .showtime-root .preview-btn {
+          .showtime-root .✨-btn {
             top: max(10px, env(safe-area-inset-top));
             right: max(10px, env(safe-area-inset-right));
             padding: 5px 11px;
