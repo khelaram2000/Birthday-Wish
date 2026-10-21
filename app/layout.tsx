@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -34,7 +35,10 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full min-h-[100dvh] overflow-hidden antialiased`}
     >
-      <body suppressHydrationWarning className="h-full min-h-[100dvh] w-full overflow-hidden m-0 p-0">{children}</body>
+      <body suppressHydrationWarning className="h-full min-h-[100dvh] w-full overflow-hidden m-0 p-0">
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
