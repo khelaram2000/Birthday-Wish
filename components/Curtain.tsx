@@ -49,7 +49,7 @@ import { createPortal } from 'react-dom';
 import { useRouter } from 'next/navigation';
 import gsap from 'gsap';
 
-export interface ShowtimeCountdownProps {
+type ShowtimeCountdownProps = {
   /** Moment the countdown ends and the curtain opens. */
   targetDate?: Date;
   /** Scrolling ticker text above/below the marquee title. */
@@ -79,8 +79,10 @@ export interface ShowtimeCountdownProps {
    * curtain-open early, so you can check the reveal without waiting for
    * the real countdown. Defaults to true — set to false for production.
    */
-  showButton?: boolean = false;
-}
+  showPreviewButton?: boolean;
+};
+
+export type { ShowtimeCountdownProps };
 
 interface Remaining {
   total: number;
@@ -127,7 +129,7 @@ export default function ShowtimeCountdown({
   songVolume = 0.6,
   redirectTo,
   children,
-  showStarButton = false,
+  showPreviewButton = false,
 }: ShowtimeCountdownProps) {
   const router = useRouter();
 
@@ -408,7 +410,7 @@ export default function ShowtimeCountdown({
         <div className="grain" />
       </div>
       
-      {showStarButton && (
+      {showPreviewButton && (
         <button
           type="button"
           className="Star-btn"
